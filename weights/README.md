@@ -1,1 +1,1 @@
-Put YOLOX weights here
+Put YOLOX weights in this folder
