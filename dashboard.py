@@ -33,7 +33,7 @@ if dark:
 server = Flask(__name__)
 # run_with_ngrok(server)
 # Init Dash App
-app = Dash(__name__, server = server, external_stylesheets=[dbc.themes.VAPOR, dbc.icons.BOOTSTRAP,'https://fonts.googleapis.com/css2?family=Montserrat'])
+app = Dash(__name__, server = server, external_stylesheets=[dbc.themes.SUPERHEO, dbc.icons.BOOTSTRAP,'https://fonts.googleapis.com/css2?family=Montserrat'])
 
 # Init Tracker
 tracker = Tracker(filter_classes= None, model = 'yolox-s', ckpt='weights/yolox_s.pth')
@@ -149,10 +149,10 @@ header = dbc.Col(width = 10,
        html.Header(style = {
            'padding':'10px',
            'text-align':'center',
-           'background':'#1abc9c;',
+           'background':'#9ec0cc;',
            'color':'white;'
            
-       }, children = [ html.H1("Traffic Flow Management", style = {
+       }, children = [ html.H1("M# TRAFFIC DASHBOARD", style = {
            'text-align':'center',
            'font-size':'4.5rem',
            'font-weight':'bold',
@@ -396,12 +396,12 @@ def update_visuals(n):
         ))
 
     cards = [
-        create_card(Header = "Vehicles This Minute", Value = vehicleslastminute, cardcolor = "primary"),
-        create_card(Header = "Total Vehicles", Value = vehiclestotal, cardcolor = "info"),
+        create_card(Header = "Vehicles This Minute", Value = vehicleslastminute, cardcolor = "#5886a5"),
+        create_card(Header = "Total Vehicles", Value = vehiclestotal, cardcolor = "#5886a5"),
 
-        create_card(Header = "Frames Per Second", Value = fps, cardcolor = "secondary"),
-        create_card(Header = "Resolution", Value = res, cardcolor = "warning"),
-        create_card(Header = "Stream", Value = stream, cardcolor = "danger"),
+        create_card(Header = "Frames Per Second", Value = fps, cardcolor = "#5886a5"),
+        create_card(Header = "Resolution", Value = res, cardcolor = "#5886a5"),
+        create_card(Header = "Stream", Value = stream, cardcolor = "#5886a5"),
 
 
     ]
