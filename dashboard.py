@@ -33,7 +33,7 @@ if dark:
 server = Flask(__name__)
 # run_with_ngrok(server)
 # Init Dash App
-app = Dash(__name__, server = server, external_stylesheets=[dbc.themes.SUPERHEO, dbc.icons.BOOTSTRAP,'https://fonts.googleapis.com/css2?family=Montserrat'])
+app = Dash(__name__, server = server, external_stylesheets=[dbc.themes.SUPERHERO, dbc.icons.BOOTSTRAP,'https://fonts.googleapis.com/css2?family=Montserrat'])
 
 # Init Tracker
 tracker = Tracker(filter_classes= None, model = 'yolox-s', ckpt='weights/yolox_s.pth')
