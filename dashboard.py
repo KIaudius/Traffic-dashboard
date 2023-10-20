@@ -428,7 +428,7 @@ def update_visuals(n):
     #Updating the layout
     fig1        = update_layout(figure=fig1, title= 'Traffic per Minute', margin = dict(t=20, b=20, r=20, l=20))
     fig2        = update_layout(figure=fig2, title='Cumulative Traffic', margin=dict(t=20, b=20, r=20, l=20))
-    speedfig    = update_layout(figure=speedfig, title='Average Speed Flow by Vehicle Type', margin=dict(t=20, b=20, r=20, l=20))
+    speedfig    = update_layout(figure=speedfig, title='Average Emissions by Vehicle Type', margin=dict(t=20, b=20, r=20, l=20))
     dirfig      = update_layout(figure=dirfig, title="Average Speed Direction Flow", margin=dict(t=40, b=10, r=10, l=10))
     sunfig      = update_layout(figure=sunfig, title="Traffic Direction Flow", margin=dict(t=30, b=10, r=60, l=10))
     infig       = update_layout(figure=infig, title="Average Speed Km/h", margin=dict(t=40, b=10, r=10, l=10))
